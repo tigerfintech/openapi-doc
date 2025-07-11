@@ -71,7 +71,7 @@ Users can use OpenAPI for free as long as they have an active and funded TradeUP
 
 #### For Individual Investors:
 
-Once your account is opened and funded, you can visit the \[Developer Platform] to complete the onboarding process.
+Once your account is opened and funded, you can visit the [Developer Platform](https://developer.tradeup.com/) to complete the onboarding process.
 
 #### For Institutional Investors:
 
@@ -111,7 +111,7 @@ git clone https://github.com/tigerbrokers/openapi-java-sdk
 
 ### Registered Developer Information
 
-Before using OpenAPI, you must open and fund your TradeUP account and apply for OpenAPI permission. Personal users can register as developers on the \[Developer Platform], and institutional users can access OpenAPI via the Institutional Hub. **Please use Chrome for this page.**
+Before using OpenAPI, you must open and fund your TradeUP account and apply for OpenAPI permission. Personal users can register as developers on the [Developer Platform](https://developer.tradeup.com/) , and institutional users can access OpenAPI via the Institutional Hub. **Please use Chrome for this page.**
 
 In order to access OpenAPI, you need to open and fund your TradeUP account.
 
