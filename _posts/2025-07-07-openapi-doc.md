@@ -135,7 +135,7 @@ developer information registration.
 * **tigerId: ​**Unique developer identifier (required for all API calls).
 * ​**Account: ​**Trading account number (2 types)
     * **Prime ​Account: ​**8-digit number (e.g. 51230321)
-    * ​**Paper Account: ​**17 digit number (e.g. 20191106192858300)\
+    * ​**Paper Account: ​**18 digit number (e.g. 132866752080200131)\
       Only active accounts with balance will be shown on the page.
 
 **Developer ​Registration ​Page: ​**Register using your phone and a verification code.
