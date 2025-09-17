@@ -368,19 +368,7 @@ from tigeropen.common.util.signature_utils import read_private_key
 from tigeropen.quote.quote_client import QuoteClient
 
 def get_client_config():
-    """
-    https://quant.itigerup.com/#developer Retrieve developer information
-    """
-    client_config = TigerOpenClientConfig()
-    # If not specified, it defaults to the current path
-    # client_config = TigerOpenClientConfig(props_path='.')
-    client_config.private_key = read_private_key('Path to the private key PEM file')
-    client_config.tiger_id = 'Replace with your tigerId'
-    client_config.account = 'Replace with your account, simulation account recommended'
-    # For institutional accounts, add the secret key
-    client_config.secret_key = 'Replace with your secret key'
-    client_config.language = Language.zh_CN  # Optional, defaults to English if not specified
-    # client_config.timezone = 'US/Eastern'  # Optional timezone setting
+    client_config = TigerOpenClientConfig(props_path='/Users/demo/props/')
     return client_config
 
 # Create the client_config object using the above-defined function
@@ -401,13 +389,6 @@ After initiating `client_config = TigerOpenClientConfig()`, you can set configur
 using `client_config.<property>`, such as `client_config.timeout = 60`.
 
 ```python
-# Developer information (props_path is the recommended method for configuring developer info)
-client_config.tiger_id = 1
-client_config.account = '123456'
-client_config.license = 'TBUS'
-client_config.private_key = read_private_key('Path to private key')  # Requires `from tigeropen.common.util.signature_utils import read_private_key`
-# The private key can also be specified as a string
-client_config.private_key = 'MIICWwIBAAKBgQCSW+.....PrivateKeyContents'
 
 # Logging level and path
 client_config.log_level = logging.DEBUG  # Requires `import logging`
