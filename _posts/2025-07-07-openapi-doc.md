@@ -312,7 +312,7 @@ prevent interface requests from being maliciously tampered with. Users will save
 
 ***
 
-### **Method 1**
+### **Configuration**
 
 Using a configuration file.
 
@@ -343,20 +343,6 @@ client_config = get_client_config()
 
 ***
 
-### **Method 2**
-
-Using market data queries as an example, all market data operations are implemented through the member methods of
-the `QuoteClient` object. Therefore, before invoking the relevant market data interfaces, you need to
-initialize `QuoteClient`. The implementation process is as follows:
-
-First, create a `client_config` object using the function `get_client_config()` as shown in the example below. Then,
-pass the `client_config` object to `QuoteClient` to initialize it. Finally, call specific methods of the `QuoteClient`.
-The initialization of `TradeClient` and `PushClient` follows a similar process.
-
-In the example below, the `read_private_key('Path to the private key PEM file')` corresponds to a PEM file that needs to
-be generated manually. Copy the PKCS#1 format private key from the developer page to a local file, and then fill in the
-complete path (including the file name) here. For example: `/data0/config/private_key.pem`. Save the private key in
-the `private_key.pem` file.
 
 ```Python
 from tigeropen.common.consts import (Language,        # Language
