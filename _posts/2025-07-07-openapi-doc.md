@@ -321,7 +321,6 @@ appropriate system path, such as `/Users/demo/props/`. Then, specify this path i
 of `TigerOpenClientConfig` (or place the configuration file in the current program directory; the SDK will default to
 the current path).
 
-Using this method eliminates the need to configure `tiger_id`, `account`, `private_key`, etc., in the code.
 
 ```python
 from tigeropen.common.consts import (Language,        # Language
@@ -339,35 +338,16 @@ def get_client_config():
 
 # Create the client_config object using the above-defined function
 client_config = get_client_config()
-```
-
-***
-
-
-```Python
-from tigeropen.common.consts import (Language,        # Language
-                                     Market,          # Market
-                                     BarPeriod,       # K-line period
-                                     QuoteRight)      # Adjustment type
-from tigeropen.tiger_open_config import TigerOpenClientConfig
-from tigeropen.common.util.signature_utils import read_private_key
-from tigeropen.quote.quote_client import QuoteClient
-
-def get_client_config():
-    client_config = TigerOpenClientConfig(props_path='/Users/demo/props/')
-    return client_config
-
-# Create the client_config object using the above-defined function
-client_config = get_client_config()
 
 # Initialize QuoteClient with the configuration object
 quote_client = QuoteClient(client_config)
 
-# Retrieve market data for ticker 00700
-stock_price = quote_client.get_stock_briefs(['00700'])
+# Retrieve market data for ticker AAPL
+stock_price = quote_client.get_stock_briefs(['AAPL'])
 ```
 
-***
+
+
 
 ### **Introduction to Common ClientConfig Configuration Options**
 
