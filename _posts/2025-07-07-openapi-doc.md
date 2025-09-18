@@ -329,6 +329,8 @@ tiger_id=20550001
 account=12345678
 license=TBUS
 env=PROD
+secret_key=
+# secret_key is required for institutional clients only
 ```
 
 ```python
