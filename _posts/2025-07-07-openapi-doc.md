@@ -333,6 +333,8 @@ secret_key=
 # secret_key is required for institutional clients only
 ```
 
+Demo code: 
+
 ```python
 from tigeropen.common.consts import (Language,        # Language
                                      Market,          # Market
@@ -341,9 +343,6 @@ from tigeropen.common.consts import (Language,        # Language
 from tigeropen.tiger_open_config import TigerOpenClientConfig
 
 def get_client_config():
-    """
-    https://quant.itigerup.com/#developer Retrieve developer information
-    """
     client_config = TigerOpenClientConfig(props_path='/Users/demo/props/')
     return client_config
 
@@ -357,7 +356,7 @@ quote_client = QuoteClient(client_config)
 stock_price = quote_client.get_stock_briefs(['AAPL'])
 ```
 
-
+You can download this [demo project](https://github.com/tigerfintech/openapi-doc/blob/main/demo/demo-project.zip), and replace the content of properties config file
 
 
 ### **Introduction to Common ClientConfig Configuration Options**
