@@ -360,7 +360,7 @@ quote_client = QuoteClient(client_config)
 stock_price = quote_client.get_stock_briefs(['AAPL'])
 ```
 
-You can download this [demo project](https://github.com/tigerfintech/openapi-doc/raw/refs/heads/main/demo/demo-project.zip), and replace the content of properties config file
+You can download this [demo project](https://github.com/tigerfintech/openapi-doc/raw/refs/heads/main/demo/demo-project.zip), and replace the contents of the properties config file
 
 
 ### **Introduction to Common ClientConfig Configuration Options**
