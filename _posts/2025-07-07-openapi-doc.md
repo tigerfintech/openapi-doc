@@ -169,6 +169,8 @@ tiger_id=20550001
 account=12345678
 license=TBUS
 env=PROD
+secret_key=
+# secret_key is required for institutional clients only
 ```
 
 **Additional ​Configurations ​​(​Optional)**
@@ -340,6 +342,8 @@ from tigeropen.common.consts import (Language,        # Language
                                      Market,          # Market
                                      BarPeriod,       # K-line period
                                      QuoteRight)      # Adjustment type
+from tigeropen.quote.quote_client import QuoteClient
+
 from tigeropen.tiger_open_config import TigerOpenClientConfig
 
 def get_client_config():
@@ -356,7 +360,7 @@ quote_client = QuoteClient(client_config)
 stock_price = quote_client.get_stock_briefs(['AAPL'])
 ```
 
-You can download this [demo project](https://github.com/tigerfintech/openapi-doc/blob/main/demo/demo-project.zip), and replace the content of properties config file
+You can download this [demo project](https://github.com/tigerfintech/openapi-doc/raw/refs/heads/main/demo/demo-project.zip), and replace the content of properties config file
 
 
 ### **Introduction to Common ClientConfig Configuration Options**
