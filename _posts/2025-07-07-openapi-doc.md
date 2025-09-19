@@ -68,6 +68,28 @@ from the market subscription for our APP.
 
 Currently, we offer free market data subscriptions for OpenAPI users.
 
+
+# Applying for API Service
+To use OpenAPI, you need to first open a trading account and complete a deposit.
+Users can use OpenAPI for free as long as they have an active and funded TradeUP account. OpenAPI is a free service—there are no additional fees for orders placed via OpenAPI.
+
+### For Individual Investors:
+Once your account has been opened and funded, you can log in to your TradeUP account on the [Developer Platform](https://www.tradeup.com/login?next=https%3A%2F%2Fdeveloper.tradeup.com%2Fprofile&lang=en_US) to complete the onboarding process. 
+Please note your OpenAPI Account ID circled below, which differs from your TradeUP Account ID.  
+![Individual Developer](/assets/individual_developer.png "Individual Developer Info")
+
+### For Institutional Investors:
+Once your account has been opened and funded, you can log in to your TradeUP account on the [Institutional Hub](https://www.tradeup.com/acct/auth/login?next=%2F). Head to Trade Setting>OpenAPI Authority to complete the onboarding process. 
+![Institutional Authority](/assets/institutional_authority.png "Institutional Authority")
+
+Please find your OpenAPI Account ID on the User Data tab by clicking the edit button. Note that this is different from your TradeUP Account ID.  
+![Institutional Account](/assets/institutional_account.png "Institutional Account")
+
+Institutional users will be required to enter a secret_key on the properties configuration file, which you can find circled below. 
+![Institutional Secret Key](/assets/institutional_secret_key.png "Institutional Secret Key")
+If you encounter any issues during the setup process, feel free to contact us at **service@tradeup.com**
+
+
 # Applying for API Service
 
 To use OpenAPI, you need to first open a trading account and complete a deposit.
