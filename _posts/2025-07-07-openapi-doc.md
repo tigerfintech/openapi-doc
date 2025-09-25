@@ -195,6 +195,9 @@ secret_key=
 # secret_key is required for institutional clients only
 ```
 
+You can download this [demo project](https://github.com/tigerfintech/openapi-doc/raw/refs/heads/main/demo/openapi-java-sdk.demo.zip), and replace the contents of the properties config file
+
+
 **Additional ​Configurations ​​(​Optional)**
 
 | **Name**      | **Description**                                                                                                                                                                                    |
